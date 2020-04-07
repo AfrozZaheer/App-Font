@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="byb-2U-ACi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial VC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InitialViewController" customModule="LanguageAndFonts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi This is testing of different app fonts changing example... THIS IS BOLD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1J-Na-rqO">
+                                <rect key="frame" x="15" y="238" width="384" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogO-Bc-5Mw">
+                                <rect key="frame" x="157" y="758" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0Ci-Gd-F4o"/>
+                                    <constraint firstAttribute="height" constant="40" id="kNO-wu-h3G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go Next"/>
+                                <connections>
+                                    <segue destination="Z83-He-fk2" kind="show" id="0Ld-wf-klO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place Holder testing... this is regular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gr6-JY-dRr">
+                                <rect key="frame" x="15" y="309" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text testing... this is Italic" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9xs-kp-wvF">
+                                <rect key="frame" x="15" y="373" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ogO-Bc-5Mw" secondAttribute="bottom" constant="64" id="3Iv-Jy-EvA"/>
+                            <constraint firstItem="9xs-kp-wvF" firstAttribute="top" secondItem="gr6-JY-dRr" secondAttribute="bottom" constant="30" id="BKG-gP-Ppt"/>
+                            <constraint firstItem="gr6-JY-dRr" firstAttribute="top" secondItem="j1J-Na-rqO" secondAttribute="bottom" constant="30" id="BPn-FD-xik"/>
+                            <constraint firstItem="gr6-JY-dRr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="C19-fh-2M3"/>
+                            <constraint firstItem="9xs-kp-wvF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="EaP-wq-HJv"/>
+                            <constraint firstItem="j1J-Na-rqO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="HUf-ak-0mQ"/>
+                            <constraint firstItem="j1J-Na-rqO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Oum-Q2-tge"/>
+                            <constraint firstItem="ogO-Bc-5Mw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="azg-2N-UtY"/>
+                            <constraint firstItem="j1J-Na-rqO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hTh-Qs-ndl"/>
+                            <constraint firstItem="9xs-kp-wvF" firstAttribute="centerX" secondItem="gr6-JY-dRr" secondAttribute="centerX" id="jMB-Rp-M2b"/>
+                            <constraint firstItem="gr6-JY-dRr" firstAttribute="centerX" secondItem="j1J-Na-rqO" secondAttribute="centerX" id="oAe-2W-eJa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Initial VC" id="3X6-76-6VF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="136.60714285714286"/>
+        </scene>
+        <!--2nd VC-->
+        <scene sceneID="AcE-YF-ecx">
+            <objects>
+                <viewController storyboardIdentifier="LanguageSettingViewController" id="Z83-He-fk2" customClass="LanguageSettingViewController" customModule="LanguageAndFonts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f1r-e4-ILK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current Language" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXn-J8-Zyb">
+                                <rect key="frame" x="15" y="308" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Z83-He-fk2" id="4ww-1u-0XR"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sXn-J8-Zyb" firstAttribute="leading" secondItem="ShH-EK-i77" secondAttribute="leading" constant="15" id="KPw-ZV-Lb4"/>
+                            <constraint firstItem="ShH-EK-i77" firstAttribute="trailing" secondItem="sXn-J8-Zyb" secondAttribute="trailing" constant="15" id="Qu7-dm-zEl"/>
+                            <constraint firstItem="sXn-J8-Zyb" firstAttribute="centerY" secondItem="ShH-EK-i77" secondAttribute="centerY" constant="-150" id="mVz-Pd-fSV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ShH-EK-i77"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="2nd VC" id="xmE-9h-0oE"/>
+                    <connections>
+                        <outlet property="pickerView" destination="dLt-3t-hBV" id="EmR-Pm-fVy"/>
+                        <outlet property="txtChangeLanguage" destination="sXn-J8-Zyb" id="Ykp-ad-63n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbe-bJ-a7M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pickerView contentMode="scaleToFill" id="dLt-3t-hBV">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="dataSource" destination="Z83-He-fk2" id="xau-X0-x3f"/>
+                        <outlet property="delegate" destination="Z83-He-fk2" id="nal-nN-4hf"/>
+                    </connections>
+                </pickerView>
+            </objects>
+            <point key="canvasLocation" x="1881.1594202898552" y="136.60714285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6kb-Cu-JFz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="byb-2U-ACi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2eo-WC-KnB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2yj-EN-uMB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXL-J0-peH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+</document>
